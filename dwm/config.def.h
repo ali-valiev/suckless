@@ -18,6 +18,7 @@ static const char *colors[][3]      = {
 
 static const char *const autostart[] = {
 	"sh", "-c", "feh --bg-fill --randomize ~/.config/wall/*", NULL,
+	"sh", "-c", "dwm-status.sh &", NULL,
 	NULL /* terminate */
 };
 
