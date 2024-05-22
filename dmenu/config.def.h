@@ -6,11 +6,11 @@ static int centered = 0;                    /* -c option; centers dmenu on scree
 static int min_width = 500;                    /* minimum width when centered */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"Fira Code:size=11"
+	"FiraCode Nerd Font:size=14"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 
-#include "./themes/dracula.h"
+#include "./themes/customdark.h"
 
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
