@@ -1,2 +1,2 @@
-sudo rm config.h
+sudo rm -f config.h
 sudo make clean install

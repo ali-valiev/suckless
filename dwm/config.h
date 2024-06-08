@@ -6,8 +6,8 @@ static const unsigned int gappx     = 7;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "FiraCode Nerd Font:size=10" };
-static const char dmenufont[]       = "FiraCode Nerd Font:size=10";
+static const char *fonts[]          = { "FiraMono Nerd Font:size=10" };
+static const char dmenufont[]       = "FiraMono Nerd Font:size=10";
 
 #include "./themes/customdark.h"
 static const char *colors[][3]      = {
@@ -17,7 +17,7 @@ static const char *colors[][3]      = {
 };
 
 static const char *const autostart[] = {
-	"sh", "-c", "feh --bg-fill --randomize ~/.config/wall/*", NULL,
+	"sh", "-c", "feh --bg-fill --randomize ~/.config/dotfiles/wall/*", NULL,
 	"sh", "-c", "dwm-status.sh &", NULL,
 	NULL /* terminate */
 };
