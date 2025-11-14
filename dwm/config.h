@@ -6,8 +6,8 @@ static const unsigned int gappx     = 7;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "MartianMono Nerd Font:size=10" };
-static const char dmenufont[]       = "MartianMono Nerd Font:size=10";
+static const char *fonts[]          = { "MartianMono Nerd Font:size=13" };
+static const char dmenufont[]       = "MartianMono Nerd Font:size=13";
 
 #include "./themes/customdark.h"
 static const char *colors[][3]      = {
@@ -23,7 +23,7 @@ static const char *const autostart[] = {
 };
 
 /* tagging */
-static const char *tags[] = { "I", "II", "III", "IV", "V", "VI" };
+static const char *tags[] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
 
 static const Rule rules[] = {
 	/* xprop(1):
