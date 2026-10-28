@@ -29,6 +29,18 @@ batt() {
 	fi
 }
 
+dsp() {
+    read -r day hour < <(date -u '+%u %H')
+    hour=$((10#$hour))
+
+    if (( day <= 5 )) &&
+       (( (hour >= 1 && hour < 4) || (hour >= 6 && hour < 10) )); then
+        echo "Peak!"
+    else
+        echo "Not Peak!"
+    fi
+}
+
 ram() {
 	mem=$(free -h | awk '/Mem:/ { print $3 }' | cut -f1 -d 'i')
 	echo "$mem"
@@ -82,7 +94,7 @@ volume() {
 }
 
 clock() {
-	dte=$(date +"%D")
+	dte=$(date +"%d/%m/%Y")
 	time=$(date +"%H:%M")
 
 	echo "$dte $time"
@@ -90,7 +102,7 @@ clock() {
 
 main() {
 	while true; do
-		xsetroot -name "[$(batt)] [$(ram)] [$(cpu)] [$(clock)]"
+		xsetroot -name "[$(dsp)] [$(batt)] [$(ram)] [$(cpu)] [$(clock)]"
 		sleep 1
 	done
 }
