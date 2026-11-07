@@ -64,7 +64,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[]  = { "dmenu_run", "-c" , "-l", "20", NULL };
 static const char *termcmd[]   = { "alacritty", NULL };
 static const char *flameshot[] = { "flameshot", "gui", NULL};
-static const char *changebg[]  = { "feh", "--bg-fill", "--randomize", "~/.config/dotfiles/wall/*", NULL };
+static const char *changebg[]  = { "sh", "-c", "feh --bg-fill --randomize ~/.config/dotfiles/wall/*", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
